@@ -31,19 +31,14 @@ checkout_start_at = datetime.datetime.now()
 # CAPTURE USER INPUTS
 #
 
-#product_ids = []
+product_ids = []
 
-#while True:
-#    product_id = input("Hey, please input a product identifier: ") # capture user input and store in variable
-#    if product_id == "DONE":
-#        break # stop the infinite loop!
-#    else:
-#        product_ids.append(product_id)
-
-
-
-product_ids = [3, 2, 1, 1]
-
+while True:
+    product_id = input("Hey, please input a product identifier: ") # capture user input and store in variable
+    if product_id == "DONE":
+        break # stop the infinite loop!
+    else:
+        product_ids.append(int(product_id)) # need to convert to integer because user inputs are treated as strings!
 
 #
 # PRINT EVERYTHING (RECEIPT) AT THE SAME TIME, AFTER CAPTURING INPUTS
